@@ -8,14 +8,23 @@ function setup(){
     poseNet = ml5.poseNet(video, modelLoaded);
     poseNet.on('pose', gotPoses);
 }
-function draw(){
-    background("#fff0000");
-}
-function modelLoaded(){
-    console.log(" Model has Loaded")
-}
 function gotPoses(results ){
     if (results.length > 0){
         console.log(results);
+        leftWristX = results[0].pose.leftWrist.x;
+        console.log("Left wrist x  =" + leftWristX );
+        rightWristX  = results[0].pose.rightWrist.x;
+        console.log("Right wrist x =" + rightWristX);
+        difference = Math.floor(leftWristX - rightWristX);
+        console.log(difference);
     }
+}
+function draw(){
+    background("#fff0000");
+    fill("green");
+    text('Yashita', 100, 100);
+    textSize(difference);
+}
+function modelLoaded(){
+    console.log(" Model has Loaded")
 }
