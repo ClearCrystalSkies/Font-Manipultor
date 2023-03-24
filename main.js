@@ -1,5 +1,5 @@
-function prload(){
-}
+var difference = 0;
+function prload(){}
 function setup(){
     video = createCapture(VIDEO);
     video.size(550, 500);
@@ -22,7 +22,7 @@ function gotPoses(results ){
 function draw(){
     background("#fff0000");
     fill("green");
-    text('Yashita', 100, 100);
+    text('Yashita', 100, 250);
     textSize(difference);
 }
 function modelLoaded(){
