@@ -1,28 +1,10 @@
-.heading{
-    width: 100%;
-    font-size: 23px;
-    margin-top: 5px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px 5px maroon;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: maroon;
+body{
+    background: rgb(241, 241, 147);
 }
-.note{
-    color: magenta;
-    font-size: 20px;
+h1{
+    background-color: palevioletred;
 }
-.copy_right_footer{
-    position: fixed;
-    bottom: 0;
-    background-color: rgba(165, 42, 42, 0.692);
-    color: aliceblue;
-    width: 100%;
-    text-align: center;
-}
-canvas{
-    border-radius: 10px;
-    box-shadow: 7px 7px 5px silver;
-    margin: 5px;
-    padding: 5px;
+p{
+    background-color: pink;
+    width: 30%;
 }
